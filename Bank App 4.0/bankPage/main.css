@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+  
+body {
+    font-size: 62.5%;
+    font-family: 'Merriweather', serif;
+    overflow: hidden;
+} 
+  
+.page-container {
+    background-image: url(./img/banApp-Bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.sidebar {
+    width: 15rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+    z-index: 10;
+    position: absolute;
+    height: 100vh;
+    left: -15rem;
+    transition: 0.3s ease;
+}
+.ul-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.myBtnStyle {
+    width: 150px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    background: rgba(39, 39, 39, 0.74);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px 0;
+    color:rgb(219, 162, 17);
+    font-family: serif;
+    border: none;
+    cursor: pointer;
+}
+.sidebar header {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.toggle-btns {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+.btn-rotate {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.btn-rotate:hover {
+    transition: 0.5s ease;
+    transform: rotate(360deg);
+}
+.active-sidebar {
+    left: 0;
+    transition: 0.3s ease;
+}
+.view {
+    margin: 30px 0;
+    position: absolute;
+    color: #fff;
+    background: rgba(39, 39, 39, 0.74);
+    padding: 30px;
+    border-radius: 25px;
+    width: 600px;
+    color: rgb(219, 162, 17);
+    text-transform: uppercase;
+}
+.account-search-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-acc-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-acc-block h1 {
+    margin-bottom: 30px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-container input, #search-input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 400px;
+    background: rgba(39, 39, 39, 0.74);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+.form-container input:focus {
+    border: 1px solid rgb(219, 162, 17);;
+}
+
+#search-input:focus {
+    border: 1px solid rgb(219, 162, 17);;
+}
+#search-input {
+    margin: 30px 0;
+}
+
+/* table */
+.table  {
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+table thead tr th{
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+}
+
+table th, table td {
+    border-bottom: 1px solid #000000;
+    padding: 10px 0;
+}
+
+
+tr:nth-child(odd){
+    background: #CCC
+}
+
+.accounts-body {
+    text-align: center;
+    color: #fff;
+}

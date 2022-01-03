@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="page-container">
+        <div class="overlay"></div>
+
+        <div class="toggle-btns">
+            <i class="fas fa-bars" id="btn-toggle"></i>
+        </div>
+        
+        <div class="sidebar">
+            <header>Menu</header>
+            <ul class="ul-buttons">
+                <li><button class="button myBtnStyle" data-btn='view_search_account'>Seach Account</button></li>
+                <li><button class="button myBtnStyle" data-btn='view_add_account'>Add Account</button></li>
+                <i class="fas fa-times btn-rotate" id="cancel-toggle"></i>
+            </ul>
+        </div>
+
+
+        
+        <section class="view" data-btn='view_search_account'>
+            <div class="account-search-body">
+                <h1>Account search</h1>
+                <input id="search-input" type="text" placeholder="Search Account Name">
+                <button id="btnSearchAcnt" class="btnSearch myBtnStyle">search</button>
+            </div>
+
+            <div class="account_search_results"> 
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Deposit</th>
+                        <th>Card</th>
+                      </tr>
+                    </thead>
+                    <tbody class="accounts-body">
+                      <tr>
+                        <td>1</td>
+                         <td>Danilo</td>
+                        <td>Vesovic</td>
+                        <td>11000</td>
+                        <td>Visa</td>
+              
+                         </tr>     
+                    </tbody>
+                     </table> 
+            </div> 
+    
+        </section>
+        <section class="view" data-btn='view_add_account'>
+            <div class="add-acc-block">
+                <h1> Add Account</h1>
+                <div class="form-container">
+                    <input type="text" placeholder="ID">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Deposit">
+                    <input type="text" placeholder="Card">
+                </div>
+                <button class="btnAddAccount myBtnStyle">Submit</button>
+            </div>
+        </section>
+    
+    </section>
+
+
+
+    <script src="./sidebar.js"></script>
+    <script src="db.js"></script>
+    <script src="searchAccount.js"></script>
+    <script src="changeViews.js"></script>
+  
+</body>
+</html>
